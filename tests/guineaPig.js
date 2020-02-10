@@ -7,16 +7,16 @@ module.exports = {
 
     'Pass 1': function(client) {
         client
-            .url('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
+            .url('https://saucedemo.com')
             .waitForElementVisible('body', 1000)
-            .assert.title('I am a page title - Sauce Labs');
+            .assert.title('Swag Labs');
     },
 
     'Pass 2': function(client) {
         client
-            .url('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
+            .url('https://saucedemo.com')
             .waitForElementVisible('body', 1000)
-            .assert.title('I am a page title - Sauce Labs');
+            .assert.title('Swag Labs');
     },
 
     afterEach: function(client, done) {
